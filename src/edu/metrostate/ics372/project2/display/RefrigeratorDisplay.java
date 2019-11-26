@@ -12,6 +12,8 @@ public interface RefrigeratorDisplay {
      * Indicate that the light is on
      */
     public void showLightOn();
+    
+    
 
     /**
      * Indicate that the light is off
