@@ -2,6 +2,8 @@ package edu.metrostate.ics372.project2.states;
 
 import edu.metrostate.ics372.project2.events.DoorCloseEvent;
 import edu.metrostate.ics372.project2.events.DoorOpenEvent;
+import edu.metrostate.ics372.project2.events.RefrigeratorOffEvent;
+import edu.metrostate.ics372.project2.events.RefrigeratorOnEvent;
 
 /**
  * The context is an observer for the temperature and stores the context info for
@@ -43,5 +45,18 @@ public class RefrigeratorContext {
 	public void handleEvent(DoorCloseEvent event) {
 		instance.handleEvent(event);
 	}
-
+	
+    /**
+     * Process refrigerator on request
+     */
+	public void handleEvent(RefrigeratorOnEvent event) {
+		instance.handleEvent(event);
+	}
+	
+    /**
+     * Process refrigerator off request
+     */
+	public void handleEvent(RefrigeratorOffEvent event) {
+		instance.handleEvent(event);
+	}
 }
