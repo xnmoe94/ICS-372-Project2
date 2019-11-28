@@ -7,19 +7,17 @@ package edu.metrostate.ics372.project2.display;
 
 public interface RefrigeratorDisplay {
 
-	
+
     /**
      * Indicate that the light is on
      */
     public void showLightOn();
-    
-    
 
     /**
      * Indicate that the light is off
      */
     public void showLightOff();
-    
+
     /**
      * Indicate that the door is now closed
      */
@@ -29,7 +27,7 @@ public interface RefrigeratorDisplay {
      * Indicate that the door is now open
      */
     public void showDoorOpened();
-    
+
     /**
      * Indicate that the refrigerator is on
      */
@@ -39,14 +37,24 @@ public interface RefrigeratorDisplay {
      * Indicate that the refrigerator is off
      */
     public void showFridgeOff();
-    
+
     /**
      * Indicate that the refrigerator cooling unit is on
      */
     public void showCoolingUnitOn();
 
     /**
-     * Indicate that the refrigerator is off
+     * Indicate that the refrigerator cooling unit is off
      */
     public void showCoolingUnitOff();
+
+    /**
+     * Indicate the outside temperature
+     */
+    public void showOutsideTemp();
+
+    /**
+     * Indicate the refrigerator temperature
+     */
+    public void showFridgeTemp();
 }

@@ -5,22 +5,31 @@ import edu.metrostate.ics372.project2.states.RefrigeratorContext;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 
-public class RefrigeratorOffButton extends GUIButton implements EventHandler<ActionEvent>{
+
+import javafx.scene.Node;
+
+public class RefrigeratorOffButton extends GUIButton implements EventHandler<ActionEvent> {
     /**
      * Crates the button with the required label
-     * 
+     *
      * @param string
      *            the label
      */
-	public RefrigeratorOffButton(String string) {
-		super(string);
-	}
+    public RefrigeratorOffButton(String string) {
+        super(string);
+    }
 
-	@Override
-	public void handle(ActionEvent event) {
-		RefrigeratorContext.instance().handleEvent(RefrigeratorOffEvent.instance());
-		
-	}
-	
+    @Override
+    public void handle(ActionEvent event) {
+        RefrigeratorContext.instance().handleEvent(RefrigeratorOffEvent.instance());
 
+    }
+
+
+
+
+    @Override
+    public Node getStyleableNode() {
+        return null;
+    }
 }

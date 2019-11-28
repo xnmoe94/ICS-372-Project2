@@ -206,7 +206,20 @@ public class GUIDisplay extends Application implements RefrigeratorDisplay {
         Scene scene;
         primaryStage.setScene(new Scene(pane, 799, 115));
         primaryStage.show();
+        
 
+		
+	}
+
+	@Override
+	public void showOutsideTemp() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void showFridgeTemp() {
+		// TODO Auto-generated method stub
 		
 	}
 
